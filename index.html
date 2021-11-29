@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>八卦</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #eee;
+    }
+
+    @keyframes x {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    #yinyang {
+      height: 400px;
+      width: 400px;
+      border-radius: 200px;
+      position: relative;
+      overflow: hidden;
+      animation: x 10s linear infinite;
+    }
+
+    #yinyang>div:first-child {
+      width: 200px;
+      height: 400px;
+      background-color: #000;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    #yinyang>div:nth-child(2) {
+      width: 200px;
+      height: 400px;
+      background-color: #fff;
+      position: absolute;
+      right: 0;
+      top:0;
+    }
+
+    #yinyang>div:nth-child(3) {
+      width: 200px;
+      height: 200px;
+      background-color: #000;
+      position: absolute;
+      border-radius: 100px;
+      right: 50%;
+      margin-right: -100px;
+      top:0;
+    }
+    #yinyang>div:nth-child(4) {
+      width: 200px;
+      height: 200px;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 100px;
+      right: 50%;
+      margin-right: -100px;
+      top: 200px;
+    }
+    
+    #yinyang>div:nth-child(5) {
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 25px;
+      left: 50%;
+      margin-left: -25px;
+      top: 75px;
+    }
+    #yinyang>div:nth-child(6) {
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      position: absolute;
+      border-radius: 25px;
+      left: 50%;
+      margin-left: -25px;
+      bottom: 75px;
+    }
+  </style>
+</head>
+<body>
+  <div id="yinyang">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>
