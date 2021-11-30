@@ -23,6 +23,13 @@
         transform: rotate(360deg);
       }
     }
+    #yinyang-wrapper {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
 
     #yinyang {
       height: 400px;
@@ -31,6 +38,7 @@
       position: relative;
       overflow: hidden;
       animation: x 10s linear infinite;
+      box-shadow: 0px 0px 5px 5px #000000;
     }
 
     #yinyang>div:first-child {
@@ -91,16 +99,25 @@
       margin-left: -25px;
       bottom: 75px;
     }
+
+    #description {
+      margin-top: 1em;
+    }
   </style>
 </head>
 <body>
-  <div id="yinyang">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+  <div id="yinyang-wrapper">
+    <div id="yinyang">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="description">
+      道可道，非常道
+    </div>
   </div>
 </body>
 </html>
